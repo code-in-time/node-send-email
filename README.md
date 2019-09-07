@@ -21,5 +21,5 @@ https://devcenter.heroku.com/articles/getting-started-with-nodejs#push-local-cha
 # run locally
  heroku local web
 
- https://vast-ocean-38023.herokuapp.com/url
-https://vast-ocean-38023.herokuapp.com/sendMail
+https://send-email---1.herokuapp.com/url
+https://send-email---1.herokuapp.com/sendMail
