@@ -1,8 +1,13 @@
 var express = require("express");
+require('dotenv').config();
+
+
 var app = express();
-app.listen(3000, () => {
-    console.log("Server running on port 3000");
+app.set('port', process.env.PORT || 3000);
+app.listen(app.get('port'), () => {
+    console.log("Server running on port", app.get('port'));
 });
+
 
 app.get("/url", (req, res, next) => {
     res.json(["Tony", "Lisa", "Michael", "Ginger", "Food"]);
@@ -13,7 +18,7 @@ app.get("/url", (req, res, next) => {
 app.post('/sendMail', function (req, res) {
     // using Twilio SendGrid's v3 Node.js Library
     // https://github.com/sendgrid/sendgrid-nodejs
-    console.log('env', process.env.SENDGRID_API_KEY)
+    // console.log('env', process.env.SENDGRID_API_KEY)
 
     var s = process.env.SENDGRID_API_KEY
 
