@@ -13,3 +13,10 @@ add a .env file  with
 SENDGRID_API_KEY=key here
 
 ```
+
+
+
+https://devcenter.heroku.com/articles/getting-started-with-nodejs#push-local-changes
+
+ . run locally
+ heroku local web
