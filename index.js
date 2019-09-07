@@ -32,13 +32,13 @@ app.post('/sendMail', function (req, res) {
     const msg = {
     to: 'andrew.crawford.za@gmail.com',
     from: 'test@example.com',
-    subject: 'Sending with Twilio SendGrid is Fun',
+    subject: 'Sending with Twilio SendGrid is Fun-'+ req.body.name + ' ' + req.body.email,
     text: 'and easy to do anywhere, even with Node.js',
     html: '<strong>and easy to do anywhere, even with Node.js</strong>',
     };
     sgMail.send(msg);
 
-    console.log('sent', req.body)
+    console.log('sent', req.body.name)
 
     res.json(`${req.body} sent -----------------------`);
 })
