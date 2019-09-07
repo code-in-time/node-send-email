@@ -18,5 +18,8 @@ SENDGRID_API_KEY=key here
 
 https://devcenter.heroku.com/articles/getting-started-with-nodejs#push-local-changes
 
- . run locally
+# run locally
  heroku local web
+
+ https://vast-ocean-38023.herokuapp.com/url
+https://vast-ocean-38023.herokuapp.com/sendMail

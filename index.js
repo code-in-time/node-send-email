@@ -1,8 +1,13 @@
-var express = require("express");
 require('dotenv').config();
-
-
+var express = require("express");
+var bodyParser = require('body-parser')
+// var multer = require('multer') // v1.0.5
 var app = express();
+// var upload = multer() // for parsing multipart/form-data
+
+app.use(bodyParser.json()) // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+
 app.set('port', process.env.PORT || 3000);
 app.listen(app.get('port'), () => {
     console.log("Server running on port", app.get('port'));
@@ -33,7 +38,7 @@ app.post('/sendMail', function (req, res) {
     };
     sgMail.send(msg);
 
-    console.log('sent')
+    console.log('sent', req.body)
 
-    res.json('sent');
+    res.json(`${req.body} sent -----------------------`);
 })
