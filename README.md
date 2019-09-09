@@ -2,6 +2,9 @@
 
 https://medium.com/@onejohi/building-a-simple-rest-api-with-nodejs-and-express-da6273ed7ca9
 
+## split up an api
+http://catlau.co/how-to-modularize-routes-with-the-express-router/
+
 
 > npm install
 

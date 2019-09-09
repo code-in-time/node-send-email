@@ -13,6 +13,12 @@ app.listen(app.get('port'), () => {
     console.log("Server running on port", app.get('port'));
 });
 
+// setup routes
+
+
+// mount the router on the app
+app.use('/base', require('./routes'));
+
 
 app.get("/url", (req, res, next) => {
     res.json(["Tony", "Lisa", "Michael", "Ginger", "Food"]);
