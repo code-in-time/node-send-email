@@ -26,3 +26,11 @@ https://devcenter.heroku.com/articles/getting-started-with-nodejs#push-local-cha
 
 https://send-email---1.herokuapp.com/url
 https://send-email---1.herokuapp.com/sendMail
+
+
+
+
+
+
+#### APIS
+- http://localhost:3004/base/api/email/sendMail
