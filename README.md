@@ -42,3 +42,6 @@ https://send-email---1.herokuapp.com/sendMail
 
 ## type script
  - https://medium.com/@rossbulat/typescript-introduction-with-nodejs-c160c4362746
+
+run type script locally
+ node_modules/typescript/bin/tsc --init

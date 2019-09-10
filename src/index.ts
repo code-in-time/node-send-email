@@ -14,3 +14,4 @@ app.listen(app.get('port'), () => {
 app.use('/base', require('./routes'));
 
 
+console.log('load')
