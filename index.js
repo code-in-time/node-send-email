@@ -10,9 +10,6 @@ app.listen(app.get('port'), () => {
     console.log("Server running on port", app.get('port'));
 });
 
-// setup routes
-
-
 // mount the router on the app
 app.use('/base', require('./routes'));
 
