@@ -34,3 +34,11 @@ https://send-email---1.herokuapp.com/sendMail
 
 #### APIS
 - http://localhost:3004/base/api/email/sendMail
+
+
+
+
+
+
+## type script
+ - https://medium.com/@rossbulat/typescript-introduction-with-nodejs-c160c4362746
