@@ -13,6 +13,11 @@ app.listen(app.get('port'), () => {
 // mount the router on the app
 app.use('/base', require('./routes'));
 
+// app.use(function (err: any, req: any, res: any, next: any) {
+//     console.error(err.stack)
+//     res.status(500).send('Something broke!')
+//   })
+
 
 console.log('load')
 console.log('load test 3')
