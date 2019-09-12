@@ -11,7 +11,7 @@ var router = require('express').Router();
  */
 // https://app.sendgrid.com/guide/integrate/langs/nodejs
 // https://stackoverflow.com/questions/14226410/node-js-cannot-find-module-mongodb
-router.post('/', function (req, res) {
+router.post('/', function (req: any, res: any) {
 
     // const mongo = require('mongodb').MongoClient;
     // const url = 'mongodb://localhost:27017/emailDB'
@@ -26,7 +26,7 @@ router.post('/', function (req, res) {
     var MongoClient = require('mongodb').MongoClient;
     var url = "mongodb://localhost:27017/";
     
-    MongoClient.connect(url, function(err, db) {
+    MongoClient.connect(url, function(err: any, db: any) {
       if (err) throw err;
       var dbo = db.db("emailDB");
       var myobj = 
@@ -37,7 +37,7 @@ router.post('/', function (req, res) {
         }
 
 
-      dbo.collection("emailMessages").insertOne(myobj, function(err, res) {
+      dbo.collection("emailMessages").insertOne(myobj, function(err: any, res: any) {
         if (err) throw err;
         console.log("1 document inserted");
         db.close();

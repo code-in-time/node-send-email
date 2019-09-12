@@ -15,3 +15,5 @@ app.use('/base', require('./routes'));
 
 
 console.log('load')
+console.log('load test 2')
+

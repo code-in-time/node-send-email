@@ -4,13 +4,13 @@
   "description": "",
   "main": "./index.js",
   "scripts": {
-    "start": "nodemon ./src/index.js",
+    "a1": "nodemon ./dist/index.js",
+    "a2": "tsc --watch",
     "start-build": "node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
 
-    "x----x----x": "Added type script",
-    "build-ts": "tsc",
-    "watch-ts": "tsc -w"
+    "x----x----x": "type script build watch the auto run node because changes happened",
+    "start": "tsc -w | nodemon ./dist/index.js"
   },
   "repository": {
     "type": "git",

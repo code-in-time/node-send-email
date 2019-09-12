@@ -1,6 +1,6 @@
 var router = require('express').Router();
 
-router.get("/", (req, res, next) => {
+router.get("/", (req: any, res: any) => {
     res.json(["Tony", "Lisa", "Michael", "Ginger", "Food"]);
 });
 
