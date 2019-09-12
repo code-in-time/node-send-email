@@ -1,3 +1,5 @@
+import express = require('express');
+
 var router = require('express').Router();
 
 
@@ -11,7 +13,7 @@ var router = require('express').Router();
  */
 // https://app.sendgrid.com/guide/integrate/langs/nodejs
 // https://stackoverflow.com/questions/14226410/node-js-cannot-find-module-mongodb
-router.post('/', function (req: any, res: any) {
+router.post('/', function (req: express.Request, res: express.Response) {
 
     // const mongo = require('mongodb').MongoClient;
     // const url = 'mongodb://localhost:27017/emailDB'

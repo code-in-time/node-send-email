@@ -1,10 +1,12 @@
+import express = require('express');
+
 var router = require('express').Router();
 
 /**
  * send email
  */
 // https://app.sendgrid.com/guide/integrate/langs/nodejs
-router.post('', function (req: any, res: any) {
+router.post('', function (req: express.Request, res: express.Response) {
     // using Twilio SendGrid's v3 Node.js Library
     // https://github.com/sendgrid/sendgrid-nodejs
     // console.log('env', process.env.SENDGRID_API_KEY)

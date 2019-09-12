@@ -12,5 +12,5 @@ app.listen(app.get('port'), function () {
 // mount the router on the app
 app.use('/base', require('./routes'));
 console.log('load');
-console.log('load test 2');
+console.log('load test 3');
 //# sourceMappingURL=index.js.map
