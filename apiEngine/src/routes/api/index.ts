@@ -5,5 +5,6 @@ router.use("/names", require("./names"));
 router.use("/save", require("./save"));
 router.use("/err", require("./testError"));
 router.use("/form", require("./form"));
+router.use("/upload", require("./upload"));
 
 module.exports = router;
