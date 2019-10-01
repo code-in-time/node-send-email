@@ -29,6 +29,7 @@
     "express": "^4.17.1",
     "formidable": "^1.2.1",
     "mongod": "^2.0.0",
+    "fs-extra": "^8.1.0",
     "typescript": "^3.6.2"
   },
   "engines": {
