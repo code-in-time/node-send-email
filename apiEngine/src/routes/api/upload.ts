@@ -9,14 +9,14 @@ var fs = require('fs-extra');
 router.post('', async (req: any, res: any) => {
     const form = new formidable.IncomingForm().parse(req)
 
-
-
+// Form headers must be https://codeburst.io/how-to-handle-multipart-form-data-in-nodejs-file-uploading-in-nodejs-26c0cb88adcf
+// Content-Type multipart/mixed
     form.on('field', (name: any, field: any) => {
-      console.log('Field', name, field)
+      console.log('Fieldxxxxxxxxxx', name, field)
     })
     .on('file', (name: any, file: any) => {
     //   console.log('Uploaded file', name, file)
-    console.log('Uploaded file', file.name, file.type)
+    console.log('Uploaded filxxxxxxxxxxxxx', file.name, file.type)
 
 
     var temp_path = file.path;
